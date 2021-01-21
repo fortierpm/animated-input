@@ -62,6 +62,10 @@ works with "required" attribute of the input element
 in html to prevent Name label from lowering back over
 text after input is deselected but holds content 
 (that Name would cover). */
+/* If the input is not required, we can use the
+":not(:placeholder-shown)" instead of ":valid".
+And in the html code for the input field add a
+placeholder with the value " "(space). */
 .form input:focus + .label-name .content-name,
 .form input:valid + .label-name .content-name {
     transform: translateY(-150%);
